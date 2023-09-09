@@ -1,0 +1,318 @@
+.icon-bar {
+  padding-top: 12rem;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  padding-right: 0.75rem;
+  text-align: right;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+}
+.iconBox {
+  top: 40%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(-60%);
+  height: 12rem;
+  width: 5rem;
+  position: fixed;
+  display: block;
+  justify-content: center;
+  align-items: right;
+  border: 1px solid #c59b45;
+  background-color: #c59b45;
+  border-radius: 30px;
+}
+.iconBoxA {
+  top: 40%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  transform: translateX(-60%);
+  height: 12rem;
+  width: 5rem;
+  position: fixed;
+  display: block;
+  justify-content: center;
+  align-items: right;
+  border: 1px solid #c59b45;
+  background-color: #c59b45;
+  border-radius: 30px;
+}
+.tel {
+  height: 2rem;
+  width: 2rem;
+  padding-left: 10px;
+  /* margin-bottom: 0.25rem; */
+  margin-top: -3.5rem;
+  filter: contrast(300%) brightness(300%);
+}
+.tel:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.ins {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+  padding-left: 10px;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  filter: contrast(300%) brightness(300%);
+}
+.ins:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.rob {
+  height: 2rem;
+  width: 2rem;
+  padding-left: 10px;
+  margin-bottom: 0.1rem;
+  margin-top: -2rem;
+  filter: contrast(300%) brightness(300%);
+}
+.rob:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.lin {
+  height: 2rem;
+  width: 2rem;
+  padding-left: 10px;
+  margin-bottom: 1rem;
+  margin-top: -0.2rem;
+  filter: contrast(300%) brightness(300%);
+}
+.lin:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.svgA {
+  margin-top: 2.5rem;
+  width: 4rem;
+  fill: #c4974a;
+  filter: contrast(150%);
+}
+.svgB {
+  margin-top: 1.5rem;
+  width: 4rem;
+  fill: #c4974a;
+  filter: contrast(150%);
+}
+.svgC {
+  margin-top: 2.5rem;
+  width: 7rem;
+  filter: contrast(150%);
+}
+.svgD {
+  margin-top: 2rem;
+  width: 3.5rem;
+  fill: #c4974a;
+  filter: contrast(150%);
+}
+.svgE {
+  margin-top: 2rem;
+  width: 5rem;
+  fill: #c4974a;
+  filter: contrast(150%);
+}
+svg:hover {
+  fill: white;
+}
+.a:hover .svgA {
+  fill: white !important;
+}
+.b:hover .svgB {
+  fill: white !important;
+}
+.c:hover .cl-2 {
+  fill: white !important;
+}
+.d:hover .svgD {
+  fill: white !important;
+}
+.e:hover .svgE {
+  fill: white !important;
+}
+.cl-1 {
+  fill: #1f211c;
+}
+
+.cl-2 {
+  fill: #c4974a;
+}
+
+@media (max-width: 690px) {
+  .iconBox {
+    margin-top: 25rem;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(-60%);
+    height: 5rem;
+    width: 2rem;
+    position: fixed;
+    justify-content: center;
+    border: 1px solid #c59b45;
+    background-color: #c59b45;
+    border-radius: 20px;
+  }
+  .tel {
+    height: 1.7rem;
+    width: 1.7rem;
+
+    margin-left: 10px;
+    margin-top: -6rem;
+    filter: contrast(300%) brightness(300%);
+  }
+  .ins {
+    position: relative;
+    height: 1.7rem;
+    width: 1.7rem;
+
+    margin-left: 10px;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    filter: contrast(300%) brightness(300%);
+  }
+  .rob {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-left: 10px;
+    margin-bottom: 0.1rem;
+    margin-top: -6rem;
+    filter: contrast(300%) brightness(300%);
+  }
+  .lin {
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-left: 10px;
+    margin-top: -5rem;
+    filter: contrast(300%) brightness(300%);
+  }
+}
+@media (max-width: 1200px) {
+  .icon-bar {
+    padding-top: 12rem;
+    top: 50%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(-50%);
+  }
+
+  .icon-bar a {
+    display: block;
+    padding-right: 1rem;
+    text-align: right;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+  }
+  .iconBox {
+    top: 32%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(-60%);
+    height: 30rem;
+    width: 15rem;
+    position: fixed;
+    display: block;
+    justify-content: center;
+    align-items: right;
+    border: 1px solid #c59b45;
+    background-color: #c59b45;
+    border-radius: 80px;
+  }
+  .iconBoxA {
+    top: 23%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(-50%);
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(-60%);
+    height: 30rem;
+    width: 15rem;
+    position: fixed;
+    display: block;
+    justify-content: center;
+    align-items: right;
+    border: 1px solid #c59b45;
+    background-color: #c59b45;
+    border-radius: 80px;
+  }
+  .tel {
+    height: 4.9rem;
+    width: 4.9rem;
+    margin-top: -1rem;
+    filter: contrast(300%) brightness(300%);
+  }
+  .ins {
+    position: relative;
+    height: 4.9rem;
+    width: 4.9rem;
+    margin-bottom: 2rem;
+    margin-top: 19rem;
+    filter: contrast(300%) brightness(300%);
+  }
+  .rob {
+    height: 4.9rem;
+    width: 4.9rem;
+    margin-bottom: 0.1rem;
+    margin-top: 1rem;
+    filter: contrast(300%) brightness(300%);
+  }
+  .lin {
+    height: 4.9rem;
+    width: 4.9rem;
+    margin-top: 1rem;
+    filter: contrast(300%) brightness(300%);
+  }
+  .svgA {
+    margin-top: 6rem;
+    width: 12rem;
+    fill: #c4974a;
+    filter: contrast(150%);
+  }
+  .svgB {
+    margin-top: 4rem;
+    width: 11rem;
+    fill: #c4974a;
+    filter: contrast(150%);
+  }
+  .svgC {
+    margin-top: 8rem;
+    width: 20rem;
+    filter: contrast(150%);
+  }
+  .svgD {
+    margin-top: 5rem;
+    width: 10rem;
+    fill: #c4974a;
+    filter: contrast(150%);
+  }
+  .svgE {
+    margin-top: 6rem;
+    width: 12rem;
+    fill: #c4974a;
+    filter: contrast(150%);
+  }
+}

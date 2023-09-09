@@ -1,0 +1,51 @@
+
+.footerB {
+  height: 2.5rem;
+  background-color: #c4974aa5;
+}
+.footerA {
+  width: 118.95rem;
+  position: absolute;
+  top: 110%;
+  height: 3rem;
+  background-color: #c4974aa5;
+}
+.cText {
+  margin-left: 50rem;
+  font-weight: 500;
+}
+
+.dText {
+  margin-left: 56rem;
+  margin-top: -0.25rem;
+  font-size: 14px;
+}
+
+@media (max-width: 690px) {
+  .footerA {
+    margin-top: 60rem;
+    position: absolute;
+    height: 2.5rem;
+    width: 25.6rem;
+    background-color: #c4974aa5;
+  }
+  .cText {
+    margin-left: 1rem;
+    font-weight: 500;
+  }
+  .dText {
+    position: absolute;
+    margin-left: 7rem;
+    margin-top: -0.25rem;
+    font-size: 14px;
+  }
+}
+@media (max-width: 1200px) {
+  .footerA {
+    margin-top: 30rem;
+    position: sticky;
+    height: 2.5rem;
+    width: 120rem;
+    background-color: #c4974aa5;
+  }
+}
