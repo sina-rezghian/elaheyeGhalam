@@ -178,6 +178,22 @@ body {
   color: white !important;
 }
 
+.imgOne {
+  margin-top: 1rem;
+  width: 6rem;
+}
+.imgTwo {
+  margin-top: 1.5rem;
+  width: 6rem;
+}
+.imgThree {
+  margin-top: 2rem;
+  width: 6rem;
+}
+.imgFour {
+  margin-top: 1rem;
+  width: 6rem;
+}
 @media (max-width: 690px) {
   .caStyle {
     /* padding-top: 30px; */
