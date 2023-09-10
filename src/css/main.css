@@ -344,4 +344,20 @@ body {
     /* margin-left: rem; */
     margin-top: 1.25rem;
   }
+  .imgOne {
+    margin-top: 1rem;
+    width: 20rem;
+  }
+  .imgTwo {
+    margin-top: 1.5rem;
+    width: 20rem;
+  }
+  .imgThree {
+    margin-top: 2rem;
+    width: 20rem;
+  }
+  .imgFour {
+    margin-top: 1rem;
+    width: 20rem;
+  }
 }
