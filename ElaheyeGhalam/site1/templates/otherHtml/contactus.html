@@ -1,0 +1,260 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href='{%static "src/css/bootstrap/bootstrap.css"%}' />
+    <link rel="stylesheet" href='{%static "src/css/header.css"%}' />
+    <link rel="stylesheet" href='{%static "src/css/icons.css"%}' />
+    <link rel="stylesheet" href='{%static "src/css/footer.css"%}' />
+    <link rel="stylesheet" href='{%static "src/css/contactus.css"%}' />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script src='{%static "src/js/bootstrap.bundle.min.js"%}'></script>
+    <title>Elaheye Galam</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-10 sBox">
+            <div class="d-none d-lg-block">
+              <div class="search-container">
+                <i class="fa fa-search"></i>
+                <input
+                  class="search-input"
+                  type="text"
+                  placeholder="Search..."
+                />
+                <i class="fa fa-times"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <img
+              id="logo"
+              class=""
+              src='{%static "src/img/لوگویالهه.png"%}'
+              alt="Bootstrap"
+            />
+          </div>
+          <div class="col-sm-1">
+            <nav class="navbar navButton">
+              <button
+                class="navbar-toggler btnSize"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close closeBtn"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link menuT"
+                        aria-current="page"
+                        href="{% url 'index'%}"
+                        >خانه</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle menuT"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        کاتالوگ ها
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item menuT" href="{% url 'ghorfesazi'%}"
+                            >غرفه سازی</a
+                          >
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item menuT" href="{% url 'kabinet_sazi'%}"
+                            >کابینت سازی</a
+                          >
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item menuT" href="{% url 'chap_va_tablighat'%}"
+                            >چاپ و تبلیغات</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menuT" href="{% url 'aboutus'%}"
+                        >درباره ما</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menuT" href="{% url 'contactus'%}"
+                        >تماس با ما</a
+                      >
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3 d-lg-none" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-success Sbtn" type="submit">
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row hLink">
+          <div class="col aText list-group-item">
+            <a href='{%static "aboutus.html"%}'>درباره ما</a>
+          </div>
+          <div class="col hText list-group-item">
+            <a href='{%static "../elaheyeghalam.html"%}'> / خانه</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1">
+            <div class="iconBox">
+              <div class="icon-bar">
+                <a href='{%static "https://instagram.com/elaheghalam?igshid=OGQ5ZDc2ODk2ZA=="%}'
+                  ><img
+                    class="ins"
+                    src='{%static "src/img/ایکن اینستا.svg"%}'
+                    alt=""
+                    srcset=""
+                /></a>
+                <a href="Http://t.me/Elaheghalamparsian"
+                  ><img
+                    class="tel"
+                    src='{%static "src/img/ایکن تلگرام.svg"%}'
+                    alt=""
+                    srcset=""
+                /></a>
+                <a href="https://rubika.ir/Elaheghalam"
+                  ><img
+                    class="rob"
+                    src='{%static "src/img/ایکن روبیکا.svg"%}'
+                    alt=""
+                    srcset=""
+                /></a>
+                <a href="https://rubika.ir/Elaheghalam"
+                  ><img
+                    class="lin"
+                    src='{%static "src/img/ایکن لینکدین.svg"%}'
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <img
+              class="aboutImg"
+              src='{%static "src/img/تماس با ما.png"%}'
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-sm-5">
+            <h2 class="aboutText">تماس با ما</h2>
+            <div class="pPlace">
+              <div>
+                <img
+                  class="iconOne"
+                  src='{%static "src/img/ایکن تلفن ورژن سیستم.png"%}'
+                  alt=""
+                />
+                <div class="textOne">021-88874158</div>
+              </div>
+              <div>
+                <img
+                  class="iconTwo"
+                  src='{%static "src/img/ایکن موبایل ورژن سیستم.png"%}'
+                  alt=""
+                />
+                <div class="textTwo">0904 606 2310</div>
+              </div>
+              <div class="textThree">0939 921 6613</div>
+              <div>
+                <img
+                  class="iconThree"
+                  src='{%static "src/img/ایکن ایمیل ورژن سیستم.png"%}'
+                  alt=""
+                />
+                <div class="textFour">Elaheghalamparsian@gmail.com</div>
+              </div>
+              <div>
+                <img
+                  class="iconFour"
+                  src='{%static "src/img/ایکن لوکیشن ورژن سیستم.png"%}'
+                  alt=""
+                />
+                <div class="textFive">
+                  دفتر مرکزی: تهران-میدان ونک-خیابان ونک-پلاک 32-ساختمان نور
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid footerA">
+        <div class="row Ctext">
+          تمامی حقوق مادی و معنوی متعلق به الهه قلم میباشد
+        </div>
+        <div class="row Dtext">
+          <div style="color: rgb(0, 0, 0)">
+            created by
+            <a style="color: rgb(173, 34, 34)" href="https://norosite.ir/"
+              >noronet.co</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src='{%static "src/js/search.js"%}'></script>
+    <script src='{%static "src/js/bootstrap.js"%}'></script>
+  </body>
+</html>

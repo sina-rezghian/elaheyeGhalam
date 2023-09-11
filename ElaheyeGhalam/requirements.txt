@@ -1,0 +1,11 @@
+asgiref==3.7.2
+Babel==2.12.1
+Django==4.2.4
+Pillow==9.5.0
+pygame==2.4.0
+pywin32==306
+sqlparse==0.4.4
+tkcalendar==1.6.1
+ttkthemes==3.2.2
+tzdata==2023.3
+vboxapi==1.0

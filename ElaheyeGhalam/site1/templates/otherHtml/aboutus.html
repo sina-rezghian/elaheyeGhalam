@@ -1,0 +1,250 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href='{%static "src/css/bootstrap/bootstrap.css"%}' />
+    <link rel="stylesheet" href='{%static "src/css/header.css" %}'/>
+    <link rel="stylesheet" href='{%static "src/css/icons.css"%}' />
+    <link rel="stylesheet" href='{%static "src/css/footer.css" %}'/>
+    <link rel="stylesheet" href='{%static "src/css/aboutus.css"%}' />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script src='{%static "src/js/bootstrap.bundle.min.js"%}'></script>
+    <title>Elaheye Galam</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-10 sBox">
+            <div class="d-none d-lg-block">
+              <div class="search-container">
+                <i class="fa fa-search"></i>
+                <input
+                  class="search-input"
+                  type="text"
+                  placeholder="Search..."
+                />
+                <i class="fa fa-times"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <img
+              id="logo"
+              class=""
+              src='{%static "src/img/لوگویالهه.png"%}'
+              alt="Bootstrap"
+            />
+          </div>
+          <div class="col-sm-1">
+            <nav class="navbar navButton">
+              <button
+                class="navbar-toggler btnSize"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <button
+                    type="button"
+                    class="btn-close closeBtn"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link menuT"
+                        aria-current="page"
+                        href="{% url 'index'%}"
+                        >خانه</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle menuT"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        کاتالوگ ها
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a class="dropdown-item menuT" href="{% url 'ghorfesazi'%}"
+                            >غرفه سازی</a
+                          >
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item menuT" href="{% url 'kabinet_sazi'%}"
+                            >کابینت سازی</a
+                          >
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item menuT" href="{% url 'chap_va_tablighat'%}"
+                            >چاپ و تبلیغات</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menuT" href="{% url 'aboutus'%}"
+                        >درباره ما</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link menuT" href="{% url 'contactus'%}"
+                        >تماس با ما</a
+                      >
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3 d-lg-none" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-success Sbtn" type="submit">
+                      Search
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row hLink">
+          <div class="col aText list-group-item">
+            <a href="{% url 'aboutus'%}">درباره ما</a>
+          </div>
+          <div class="col hText list-group-item">
+            <a href="{% url 'index'%}"> / خانه</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-1">
+            <div class="iconBox">
+              <div class="icon-bar">
+                <a href="https://instagram.com/elaheghalam?igshid=OGQ5ZDc2ODk2ZA=="
+                  ><img
+                    class="ins"
+                    src='{%static "src/img/ایکن اینستا.svg"%}'
+                    alt=""
+                    srcset=""
+                /></a>
+                <a href="Http://t.me/Elaheghalamparsian"
+                  ><img
+                    class="tel"
+                    src='{%static "src/img/ایکن تلگرام.svg"%}'
+                    alt=""
+                    srcset=""
+                /></a>
+                <a href="https://rubika.ir/Elaheghalam"
+                  ><img
+                    class="rob"
+                    src='{%static "src/img/ایکن روبیکا.svg"%}'
+                    alt=""
+                    srcset=""
+                /></a>
+                <a href="https://rubika.ir/Elaheghalam"
+                  ><img
+                    class="lin"
+                    src='{%static "src/img/ایکن لینکدین.svg"%}'
+                    alt=""
+                    srcset=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-5">
+            <img
+              class="aboutImg"
+              src='{%static "src/img/درباره ما.png"%}'
+              alt=""
+              srcset=""
+            />
+          </div>
+          <div class="col-sm-6">
+            <h2 class="aboutText">درباره ما</h2>
+            <div class="pPlace">
+              <p class="aboutT">
+                هلدینگ الهه قلم پارسیان از سال 1382 در زمینه چاپ و تبلیغات شروع
+                به فعالیت نمود. در طی نزدیک به دو دهه فعالیت با توجه به تخصص و
+                تجربه نیروهای خود توسعه یافته و در رونق کسب و کار ورود نموده و
+                با مشاوره کارخانجات و شرکت های معتبر جایگاه ویژه ای را برای خود
+                به دست آورده است<br /><br />:هلدینگ الهه قلم با هدف ارائه مناسب
+                ترین خدمات در زمینه <br /><br />
+                <strong>مشاوره کسب و کار -</strong> <br />
+                <strong>چاپ و بسته بندی -</strong> <br />
+                <strong>دکوراسیون (غرفه سازی) -</strong> <br />
+                <strong>تیزر سازی -</strong> <br /><br />
+                فعالیت خود را آغاز نموده است <br /><br />الهه قلم تلفیقی است از
+                دانش، تخصص و تجربه جهت ارائه بهترین خدمات به مشتریان که این امر
+                بدون حضور نیروی متخصص امکان پذر نیست <br /><br />
+                ابن هلدینگ دارای دپارتمان های متعددی است، دپارتمان طراحی
+                دکوراسیون دکوساز دارای تجربه و کارنامه درخشانی در تولید درب های
+                تمام چوب و روکش چوب کابینت و کمد می باشد <br /><br />شرکت الهه
+                قلم با دو دهه سابقه درخشان و فعالیت مستمر در زمینه تبلیغات در
+                سایه مهندسین مشاور و کادری مجرب، هنر و خالقیت نوین و بهره گیری
+                از مدرن ترین دستگاه های چاپ توانسته است اهداف خود را در راستای
+                پاسخگویی به نیاز مشتری تحقق بخشد. الهه قلم با بهره مندی از بخش
+                های مشاوره تبلیغاتی، چاپ، مشاوره کسب و کار، غرفه نمای شگاهی،
+                ساخت و تدوین تیزر توانسته نقش به سزایی در افزایش کیفیت تبلیغات
+                ایفا نماید
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container-fluid footerAA">
+        <div class="row Ctext">
+          تمامی حقوق مادی و معنوی متعلق به الهه قلم میباشد
+        </div>
+        <div class="row Dtext">
+          <div style="color: rgb(0, 0, 0)">
+            created by
+            <a style="color: rgb(173, 34, 34)" href="https://norosite.ir/"
+              >noronet.co</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src='{%static "src/js/search.js"%}'></script>
+    <script src='{%static "src/js/bootstrap.js"%}'></script>
+    <script src='{%static "src/js/bootstrap.bundle.min.js"%}'></script>
+  </body>
+</html>
