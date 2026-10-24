@@ -1,0 +1,9 @@
+{% load static %}
+<div class="service-grid">
+{% for service in services %}
+  <a class="service-card" href="{% url service.url %}">
+    <img src="{% static service.icon %}" width="54" height="54" alt="" loading="lazy">
+    <h3>{{ service.title }}</h3><p>{{ service.description }}</p><span class="card-link">بیشتر بدانید <span aria-hidden="true">↖</span></span>
+  </a>
+{% endfor %}
+</div>

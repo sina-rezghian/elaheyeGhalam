@@ -1,0 +1,3 @@
+{% extends 'base.html' %}
+{% block title %}جستجوی خدمات | الهه قلم پارسیان{% endblock %}
+{% block content %}<section class="container search-results"><p class="eyebrow">جستجو در خدمات</p><h1>نتایج جستجو</h1>{% if query %}<p class="results-summary">نتایج برای «{{ query }}»</p>{% if results %}{% include 'includes/service_cards.html' with services=results %}{% else %}<div class="empty-state"><h2>خدمتی با این عبارت پیدا نشد.</h2><p>عبارت دیگری مانند «چاپ»، «دکور» یا «کابینت» را جستجو کنید.</p><a class="button" href="{% url 'index' %}">مشاهده خدمات ←</a></div>{% endif %}{% else %}<p>نام خدمت مورد نظر را در قسمت جستجو وارد کنید.</p>{% endif %}</section>{% endblock %}

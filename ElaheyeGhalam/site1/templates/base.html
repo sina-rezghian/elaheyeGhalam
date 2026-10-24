@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="الهه قلم پارسیان؛ خدمات چاپ و تبلیغات، مشاوره کسب‌وکار و دکوراسیون.">
+  <title>{% block title %}الهه قلم پارسیان{% endblock %}</title>
+  <link rel="icon" type="image/svg+xml" href="{% static 'site1/mark.svg' %}">
+  <link rel="stylesheet" href="{% static 'site1/site.css' %}">
+  <script src="{% static 'site1/site.js' %}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">رفتن به محتوای اصلی</a>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="brand" href="{% url 'index' %}" aria-label="الهه قلم پارسیان، خانه">
+        <img src="{% static 'site1/mark.svg' %}" width="48" height="48" alt="">
+        <span><strong>الهه قلم</strong><small>پارسیان</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>فهرست <span aria-hidden="true">☰</span></button>
+      <nav class="site-nav" id="site-nav" aria-label="فهرست اصلی">
+        <a href="{% url 'index' %}" {% if request.resolver_match.url_name == 'index' %}aria-current="page"{% endif %}>خانه</a>
+        <details class="nav-dropdown">
+          <summary>خدمات و کاتالوگ‌ها</summary>
+          <div class="dropdown-links">
+            <a href="{% url 'chap_va_tablighat' %}">چاپ و تبلیغات</a>
+            <a href="{% url 'decorsazi' %}">دکور سازی</a>
+            <a href="{% url 'ghorfesazi' %}">غرفه سازی</a>
+            <a href="{% url 'kabinet_sazi' %}">کابینت سازی</a>
+          </div>
+        </details>
+        <a href="{% url 'aboutus' %}" {% if request.resolver_match.url_name == 'aboutus' %}aria-current="page"{% endif %}>درباره ما</a>
+        <a href="{% url 'contactus' %}" {% if request.resolver_match.url_name == 'contactus' %}aria-current="page"{% endif %}>تماس با ما</a>
+      </nav>
+      <form class="site-search" role="search" action="{% url 'search' %}" method="get">
+        <label class="sr-only" for="site-query">جستجو در خدمات</label>
+        <input id="site-query" name="q" type="search" value="{{ query }}" placeholder="جستجوی خدمات…" maxlength="200" required>
+        <button type="submit" aria-label="جستجو"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg></button>
+      </form>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">{% block content %}{% endblock %}</main>
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div><a class="footer-brand" href="{% url 'index' %}">الهه قلم پارسیان</a><p>تلفیقی از دانش، تخصص و تجربه</p></div>
+      <nav aria-label="شبکه‌های اجتماعی"><a href="https://instagram.com/elaheghalam">اینستاگرام</a><a href="https://t.me/Elaheghalamparsian">تلگرام</a><a href="https://rubika.ir/Elaheghalam">روبیکا</a></nav>
+      <a class="footer-phone" dir="ltr" href="tel:+982188874158">021 8887 4158</a>
+    </div>
+    <div class="container footer-bottom"><span>تمامی حقوق مادی و معنوی متعلق به الهه قلم می‌باشد.</span><span dir="ltr">created by <a href="https://norosite.ir/">noronet.co</a></span></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{% extends 'base.html' %}{% load static %}
+{% block title %}{{ title }} | الهه قلم پارسیان{% endblock %}
+{% block content %}
+<div class="container"><nav class="breadcrumbs" aria-label="مسیر صفحه"><a href="{% url 'index' %}">خانه</a><span>/</span><span>{{ title }}</span></nav>
+<nav class="catalog-tabs" aria-label="خدمات"><a href="{% url 'chap_va_tablighat' %}" {% if request.resolver_match.url_name == 'chap_va_tablighat' %}aria-current="page"{% endif %}>چاپ و تبلیغات</a><a href="{% url 'ghorfesazi' %}" {% if request.resolver_match.url_name == 'ghorfesazi' %}aria-current="page"{% endif %}>غرفه سازی</a><a href="{% url 'kabinet_sazi' %}" {% if request.resolver_match.url_name == 'kabinet_sazi' %}aria-current="page"{% endif %}>کابینت سازی</a></nav>
+<section class="page-hero"><div><p class="eyebrow">{{ eyebrow }}</p><h1>{{ title }}</h1><h2>{{ description }}</h2><p>{{ intro }}</p><a class="button" href="{% url 'contactus' %}">درخواست مشاوره ←</a></div>{% if request.resolver_match.url_name == 'chap_va_tablighat' %}<img src="{% static 'site1/studio.svg' %}" width="680" height="560" alt="تصویرسازی چاپ و طراحی">{% else %}<img src="{% static 'site1/space.svg' %}" width="600" height="420" alt="تصویرسازی دکوراسیون و طراحی فضا">{% endif %}</section>
+<section class="catalog-content"><p class="eyebrow">حوزه‌های فعالیت</p><h2>از ایده تا اجرا در کنار شما</h2><div class="feature-grid">{% for item in items %}<article><span class="feature-number" aria-hidden="true">0{{ forloop.counter }}</span><h3>{{ item }}</h3></article>{% endfor %}</div><div class="catalog-notice"><p>برای دریافت کاتالوگ و اطلاعات بیشتر درباره خدمات، با ما تماس بگیرید.</p><a class="text-link" href="{% url 'contactus' %}">راه‌های ارتباطی ←</a></div></section></div>
+{% endblock %}
